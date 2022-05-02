@@ -12,3 +12,28 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    min-height: 100vh;
+    background-color: var(--royal-blue-dark);
+}
+
+h1, h2 {
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+#page-title {
+    margin-top: 30px;
+    padding: 20px 0 20px 0;
+}
+
+#home {
+    height: 50vh;
+    display: flex;
+    padding: 0 4em;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
