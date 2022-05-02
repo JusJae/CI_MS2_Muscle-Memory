@@ -1,0 +1,14 @@
+:root {
+    --royal-blue-dark: #00296bff;
+    --melon: #f7bfb4ff;
+    --rosso-corsa: #d00000ff;
+    --amethyst: #985cdcff;
+    --body-fonts: "Tahoma", "Helvetica", "Arial", sans-serif;
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
