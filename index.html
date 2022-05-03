@@ -1,74 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A Card Matching Game to work on remembering the muscles and storing them in your memory.">
-    <meta name="keywords" content="Muscle Memory, Memory Game, Memory, Matching, Cards, Anatomy, Learn, Remember, Pairs">
+    <meta name="description"
+        content="A Card Matching Game to work on remembering the muscles and storing them in your memory.">
+    <meta name="keywords"
+        content="Muscle Memory, Memory Game, Memory, Matching, Cards, Anatomy, Learn, Remember, Pairs">
     <meta name="author" content="Jae Phillips">
     <title>Muscle Memory | Home</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-            integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="container" id="page-title">
-        <h1>Muscle Memory</h1>
-        <h2>Lets see how good your muscle memory really is?</h2>
-    </div>
-    <!-- Home Cards -->
-    <div class="container mt-3 p-3 text-center" id="home">
 
-        <div class="container home-card">
-            <div class="card">
-                <div class="home-card-front">
-                    <div class="content">
-                        <i class="fas fa-play"></i>
-                        <h3>Game</h3>
-                    </div>
-                </div>
-                <div class="home-card-back">
-                    <div class="content">
-                        <p>Back</p>
-                        <button type="button" class="btn btn-outline-info" onclick="window.location.href='game.html';" >Let's Play!</button>
-                    </div>
-                </div>
-            </div>
+        <div id="page-title">
+            <h1>Muscle Memory</h1>
+            <h2>Lets see how good your muscle memory really is?</h2>
         </div>
-
-        <div class="container home-card">
-            <div class="card">
-                <div class="home-card-front">
-                    <div class="content">
-                        <i class="fas fa-list-ol"></i>
-                        <h3>Rules</h3>
+        <section>
+            <div class="container nav-card">
+                <div class="home-card">
+                    <div class="home-card-front">
+                        <div class="content">
+                            <i class="fas fa-list-ol"></i>
+                            <h3>Rules</h3>
+                        </div>
+                    </div>
+                    <div class="home-card-back">
+                        <div class="content">
+                            <p>
+                                Learn How to Play
+                            </p>
+                            <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal"
+                                data-bs-target="#myModal">RULES</button>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="card">
-                <div class="content">
-                <p>Back</p>
-                <div class="container">
-                    <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#myModal">
-                        Learn How To Play
-                    </button>
-                </div>
-                </div>
-            </div>
-        </div>
-        <!-- The Modal -->
+            <!-- The Modal -->
             <div class="modal" id="myModal">
                 <div class="modal-dialog">
                     <div class="modal-content">
+
                         <!-- Modal Header -->
                         <div class="modal-header">
-                            <h4 class="modal-title">Modal Heading</h4>
+                            <h4 class="modal-title">How to Play</h4>
                             <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                         </div>
-            
+
                         <!-- Modal body -->
                         <div class="modal-body">
                             <ol>
@@ -79,53 +65,78 @@
                                 <li>Match</li>
                             </ol>
                         </div>
-            
+
                         <!-- Modal footer -->
                         <div class="modal-footer">
                             <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="container nav-card">
+                <div class="home-card" id="rules-card">
+                    <div class="home-card-front">
+                        <div class="content">
+                            <i class="fas fa-play"></i>
+                            <h3>Game</h3>
+                        </div>
+                    </div>
+                    <div class="home-card-back">
+                        <div class="content">
+                            <p>
+                                Matching Memory Game.
+                            </p>
+                            <button type="button" class="btn btn-outline-info"
+                                onclick="window.location.href = 'game.html';">Play!</button>
                         </div>
                     </div>
                 </div>
             </div>
 
-        <div class="container home-card">
-            <div class="card">
-                <div class="home-card-front">
-                    <div class="content">
-                        <i class="fas fa-trophy"></i>
-                        <h3>High Scores</h3>
+            <div class="container nav-card">
+                <div class="home-card" id="highscores-card">
+                    <div class="home-card-front">
+                        <div class="content">
+                            <i class="fas fa-trophy"></i>
+                            <h3>High Scores</h3>
+                        </div>
                     </div>
-                </div>
-                <div class="home-card-back">
-                    <div class="content">
-                        <p>Back</p>
-                        <button type="button" class="btn btn-outline-warning" onclick="window.location.href = 'scores.html';">How Well Did you Do?</button>
+                    <div class="home-card-back">
+                        <div class="content">
+                            <p>
+                                Do you remember your best score?
+                            </p>
+                            <button type="button" class="btn btn-outline-success" onclick="window.location.href = 'scores.html';">High Scores</button>
+                        </div>
                     </div>
                 </div>
             </div>
+        </section>
+
+    <!-- Home Cards -->
+
+    <footer class="footer mt-auto py-3">
+        <div class="container">
+            <!-- Facebook -->
+            <a href="https://github.com/" target="_blank" class="btn btn-outline-light btn-floating m-1" role="button"
+                aria-label="Github"><i class="fab fa-github"></i></a>
+
+            <!-- Twitter -->
+            <a href="https://twitter.com/" target="_blank" class="btn btn-outline-light btn-floating m-1" role="button"
+                aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+
+            <!-- Instagram -->
+            <a href="https://instagram.com/" target="_blank" class="btn btn-outline-light btn-floating m-1"
+                role="button" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+
+            <h6 class="jus-jae">Made by Jus Jae © 2022</h6>
         </div>
-    </div>
-    <br>
-    <hr>
-<footer class="footer">
-    <div class="container-fluid">
-        <!-- Facebook -->
-        <a href="https://github.com/" target="_blank" class="btn btn-outline-light" role="button"
-            aria-label="Github"><i class="fab fa-github"></i></a>
-        
-        <!-- Twitter -->
-        <a href="https://twitter.com/" target="_blank" class="btn btn-outline-light" role="button"
-            aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-        
-        <!-- Instagram -->
-        <a href="https://instagram.com/" target="_blank" class="btn btn-outline-light" role="button"
-            aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-        
-        <h6 class="jus-jae">Made by Jus Jae © 2022</h6>
-    </div>
-</footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
 </body>
+
 </html>
